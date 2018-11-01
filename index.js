@@ -8,8 +8,11 @@ function findMatching(drivers, name){
   return matches;
 }
 
-function fuzzyMatch(){
-
+function fuzzyMatch(drivers, name){
+  const matches = drivers.filter(function(driver){
+    
+  });
+  return matches;
 }
 
 function matchName(){
