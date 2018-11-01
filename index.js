@@ -8,9 +8,9 @@ function findMatching(drivers, name){
   return matches;
 }
 
-function fuzzyMatch(drivers, name){
+function fuzzyMatch(drivers, nameStart){
   const matches = drivers.filter(function(driver){
-    
+    return driver.substring(0, nameStart.length) === nameStart;
   });
   return matches;
 }
