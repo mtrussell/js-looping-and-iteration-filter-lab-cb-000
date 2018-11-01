@@ -5,6 +5,7 @@ function findMatching(drivers, name){
   const matches = drivers.filter(function(driver){
     return driver.toLowerCase() === driverName;
   });
+  return matches;
 }
 
 function fuzzyMatch(){
