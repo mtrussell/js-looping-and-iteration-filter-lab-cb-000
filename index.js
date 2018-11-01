@@ -2,7 +2,7 @@
 
 function findMatching(drivers, name){
   const driverName = name.toLowerCase();
-  const matches = drivers.filter(driver, function(){
+  const matches = drivers.filter(function(driver){
     return driver.toLowerCase() === driverName;
   });
 }
